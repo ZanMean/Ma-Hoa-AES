@@ -8,8 +8,8 @@ namespace Ma_Hoa_AES
 {
     internal class Belasco
     {
-        public string plainText { get; set; }
-        public string cipherText { get; set; }
+        public Belasco() { }
+
 
     }
 }

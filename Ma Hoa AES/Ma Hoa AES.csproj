@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Belasco.cs" />
     <Compile Include="CEASAR.cs" />
+    <Compile Include="CEASARHelpers.cs" />
     <Compile Include="MaHoa_Belasco\MaHoa_Belasco.cs">
       <SubType>Form</SubType>
     </Compile>

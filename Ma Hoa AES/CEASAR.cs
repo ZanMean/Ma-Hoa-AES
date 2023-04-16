@@ -9,7 +9,10 @@ namespace Ma_Hoa_AES
     internal class CEASAR
     {
         public CEASAR(){ }
-
+        public string cipher (string text, int key, string action)
+        {
+            return "";
+        }
         public static string encryppt (string plaintext,int key)
         {
             string ciphertext = "";
@@ -28,7 +31,7 @@ namespace Ma_Hoa_AES
                 }
             }
             return ciphertext;
-        }
+        }       
         public static string decrypt(string ciphertext, int key)
         {
             string plaintext = "";
