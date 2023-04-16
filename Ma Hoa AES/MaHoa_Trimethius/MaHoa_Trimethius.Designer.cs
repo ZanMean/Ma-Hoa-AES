@@ -48,8 +48,17 @@
             this.txtreencr = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.giaoDiệnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Form3TrangChu = new System.Windows.Forms.ToolStripMenuItem();
+            this.Form3Ceasar = new System.Windows.Forms.ToolStripMenuItem();
+            this.Form3Trimethius = new System.Windows.Forms.ToolStripMenuItem();
+            this.Form3Belasco = new System.Windows.Forms.ToolStripMenuItem();
+            this.Form3Vignere = new System.Windows.Forms.ToolStripMenuItem();
+            this.Form3Xor = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -275,6 +284,70 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "MÃ HÓA - GIẢI MÃ TRITHEMIUS";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.giaoDiệnToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1318, 24);
+            this.menuStrip1.TabIndex = 10;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // giaoDiệnToolStripMenuItem
+            // 
+            this.giaoDiệnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Form3TrangChu,
+            this.Form3Ceasar,
+            this.Form3Trimethius,
+            this.Form3Belasco,
+            this.Form3Vignere,
+            this.Form3Xor});
+            this.giaoDiệnToolStripMenuItem.Name = "giaoDiệnToolStripMenuItem";
+            this.giaoDiệnToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.giaoDiệnToolStripMenuItem.Text = "Giao diện";
+            // 
+            // Form3TrangChu
+            // 
+            this.Form3TrangChu.Name = "Form3TrangChu";
+            this.Form3TrangChu.Size = new System.Drawing.Size(189, 22);
+            this.Form3TrangChu.Text = "Trang chủ";
+            this.Form3TrangChu.Click += new System.EventHandler(this.Form3TrangChu_Click);
+            // 
+            // Form3Ceasar
+            // 
+            this.Form3Ceasar.Name = "Form3Ceasar";
+            this.Form3Ceasar.Size = new System.Drawing.Size(189, 22);
+            this.Form3Ceasar.Text = "Thuật toán Ceasar";
+            this.Form3Ceasar.Click += new System.EventHandler(this.Form3Ceasar_Click);
+            // 
+            // Form3Trimethius
+            // 
+            this.Form3Trimethius.Name = "Form3Trimethius";
+            this.Form3Trimethius.Size = new System.Drawing.Size(189, 22);
+            this.Form3Trimethius.Text = "Thuật toán Trimethius";
+            // 
+            // Form3Belasco
+            // 
+            this.Form3Belasco.Name = "Form3Belasco";
+            this.Form3Belasco.Size = new System.Drawing.Size(189, 22);
+            this.Form3Belasco.Text = "Thuật toán Belasco";
+            this.Form3Belasco.Click += new System.EventHandler(this.Form3Belasco_Click);
+            // 
+            // Form3Vignere
+            // 
+            this.Form3Vignere.Name = "Form3Vignere";
+            this.Form3Vignere.Size = new System.Drawing.Size(189, 22);
+            this.Form3Vignere.Text = "Thuật toán Vignere";
+            this.Form3Vignere.Click += new System.EventHandler(this.Form3Vignere_Click);
+            // 
+            // Form3Xor
+            // 
+            this.Form3Xor.Name = "Form3Xor";
+            this.Form3Xor.Size = new System.Drawing.Size(189, 22);
+            this.Form3Xor.Text = "Thuật toán Xor";
+            this.Form3Xor.Click += new System.EventHandler(this.Form3Xor_Click);
+            // 
             // MaHoa_Trimethius
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,12 +356,16 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MaHoa_Trimethius";
             this.Text = "MaHoa_Trimethius";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,5 +393,13 @@
         private System.Windows.Forms.TextBox txtreencr;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem giaoDiệnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Form3TrangChu;
+        private System.Windows.Forms.ToolStripMenuItem Form3Ceasar;
+        private System.Windows.Forms.ToolStripMenuItem Form3Trimethius;
+        private System.Windows.Forms.ToolStripMenuItem Form3Belasco;
+        private System.Windows.Forms.ToolStripMenuItem Form3Vignere;
+        private System.Windows.Forms.ToolStripMenuItem Form3Xor;
     }
 }

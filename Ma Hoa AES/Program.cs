@@ -11,7 +11,7 @@ namespace Ma_Hoa_AES
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MaHoa_Ceasar.MaHoa_Ceasar());
+            Application.Run(new GiaoDien_TrangChu.GiaoDien_TrangChu());
         }
     }
 }

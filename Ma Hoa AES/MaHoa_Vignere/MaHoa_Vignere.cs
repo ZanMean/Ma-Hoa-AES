@@ -16,5 +16,10 @@ namespace Ma_Hoa_AES.MaHoa_Vignere
         {
             InitializeComponent();
         }
+
+        private void thuậtToánToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

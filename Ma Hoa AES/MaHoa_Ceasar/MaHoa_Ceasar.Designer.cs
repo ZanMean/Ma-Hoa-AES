@@ -54,8 +54,18 @@
             this.txtkey2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.trangChủToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Form2TrangChu = new System.Windows.Forms.ToolStripMenuItem();
+            this.Form2Ceasar = new System.Windows.Forms.ToolStripMenuItem();
+            this.Form2Trimethius = new System.Windows.Forms.ToolStripMenuItem();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Form2Belesco = new System.Windows.Forms.ToolStripMenuItem();
+            this.Form2Vignere = new System.Windows.Forms.ToolStripMenuItem();
+            this.Form2Xor = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtencr
@@ -234,7 +244,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(436, 45);
+            this.label1.Location = new System.Drawing.Point(451, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(369, 38);
             this.label1.TabIndex = 6;
@@ -341,20 +351,101 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "GIẢI MÃ";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.trangChủToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1318, 24);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // trangChủToolStripMenuItem
+            // 
+            this.trangChủToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Form2TrangChu,
+            this.Form2Ceasar,
+            this.Form2Trimethius,
+            this.Form2Belesco,
+            this.Form2Vignere,
+            this.Form2Xor});
+            this.trangChủToolStripMenuItem.Name = "trangChủToolStripMenuItem";
+            this.trangChủToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.trangChủToolStripMenuItem.Text = "Giao diện";
+            this.trangChủToolStripMenuItem.Click += new System.EventHandler(this.trangChủToolStripMenuItem_Click);
+            // 
+            // Form2TrangChu
+            // 
+            this.Form2TrangChu.Name = "Form2TrangChu";
+            this.Form2TrangChu.Size = new System.Drawing.Size(189, 22);
+            this.Form2TrangChu.Text = "Trang chủ";
+            this.Form2TrangChu.Click += new System.EventHandler(this.thuậtToánJCeasarToolStripMenuItem_Click);
+            // 
+            // Form2Ceasar
+            // 
+            this.Form2Ceasar.Name = "Form2Ceasar";
+            this.Form2Ceasar.Size = new System.Drawing.Size(189, 22);
+            this.Form2Ceasar.Text = "Thuật toán Ceasar";
+            this.Form2Ceasar.Click += new System.EventHandler(this.Form2Ceasar_Click);
+            // 
+            // Form2Trimethius
+            // 
+            this.Form2Trimethius.Name = "Form2Trimethius";
+            this.Form2Trimethius.Size = new System.Drawing.Size(189, 22);
+            this.Form2Trimethius.Text = "Thuật toán Trimethius";
+            this.Form2Trimethius.Click += new System.EventHandler(this.thuậtToánTrimethiusToolStripMenuItem_Click_1);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(510, 86);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(278, 16);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "(Key là độ lệch vị trí cần phải nhập số < 10000)";
+            // 
+            // Form2Belesco
+            // 
+            this.Form2Belesco.Name = "Form2Belesco";
+            this.Form2Belesco.Size = new System.Drawing.Size(189, 22);
+            this.Form2Belesco.Text = "Thuật toán Belasco";
+            this.Form2Belesco.Click += new System.EventHandler(this.Form2Belesco_Click);
+            // 
+            // Form2Vignere
+            // 
+            this.Form2Vignere.Name = "Form2Vignere";
+            this.Form2Vignere.Size = new System.Drawing.Size(189, 22);
+            this.Form2Vignere.Text = "Thuật toán Vignere";
+            this.Form2Vignere.Click += new System.EventHandler(this.Form2Vignere_Click);
+            // 
+            // Form2Xor
+            // 
+            this.Form2Xor.Name = "Form2Xor";
+            this.Form2Xor.Size = new System.Drawing.Size(189, 22);
+            this.Form2Xor.Text = "Thuật toán Xor";
+            this.Form2Xor.Click += new System.EventHandler(this.Form2Xor_Click);
+            // 
             // MaHoa_Ceasar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1318, 721);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MaHoa_Ceasar";
             this.Text = "MaHoa_Ceasar";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,5 +479,14 @@
         private System.Windows.Forms.TextBox txtkey2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem trangChủToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Form2TrangChu;
+        private System.Windows.Forms.ToolStripMenuItem Form2Ceasar;
+        private System.Windows.Forms.ToolStripMenuItem Form2Trimethius;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ToolStripMenuItem Form2Belesco;
+        private System.Windows.Forms.ToolStripMenuItem Form2Vignere;
+        private System.Windows.Forms.ToolStripMenuItem Form2Xor;
     }
 }
