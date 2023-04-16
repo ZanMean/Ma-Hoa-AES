@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GiaoDien_TrangChu\GiaoDien_TrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien_TrangChu\GiaoDien_TrangChu.Designer.cs">
+      <DependentUpon>GiaoDien_TrangChu.cs</DependentUpon>
+    </Compile>
     <Compile Include="MaHoa_Belasco\MaHoa_Belasco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sec_AES.cs" />
+    <EmbeddedResource Include="GiaoDien_TrangChu\GiaoDien_TrangChu.resx">
+      <DependentUpon>GiaoDien_TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MaHoa_Belasco\MaHoa_Belasco.resx">
       <DependentUpon>MaHoa_Belasco.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +145,7 @@
   <ItemGroup>
     <Content Include="encryption.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
