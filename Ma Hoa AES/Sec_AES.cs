@@ -11,13 +11,10 @@ namespace Ma_Hoa_AES
         public Sec_AES()
         {
         }
-
-        //private string aeskey192 = "Nht2007";
-        // Encrypt a byte array into a byte array using a key and an IV 
+        /*---------------MÃ HÓA-------------------------*/
         private byte[] Encrypt(byte[] clearData, byte[] Key, byte[] IV)
         {
 
-            // Create a MemoryStream that is going to accept the encrypted bytes 
             MemoryStream ms = new MemoryStream();
 
             Rijndael alg = Rijndael.Create();
@@ -29,24 +26,13 @@ namespace Ma_Hoa_AES
             byte[] encryptedData = ms.ToArray();
             return encryptedData;
         }
-
-
-
-        /// <summary>
-        /// Returns an encrypted string using Rijndael (128,192,256 Bits).
-        /// </summary>
+        
         public string Encrypt(string Data,string Password , int Bits)
         {
-            //string Password = aeskey192;
-
             byte[] clearBytes = System.Text.Encoding.Unicode.GetBytes(Data);
-
-
             PasswordDeriveBytes pdb = new PasswordDeriveBytes(Password,
 
-
                 new byte[] { 0x00, 0x01, 0x02, 0x1C, 0x1D, 0x1E, 0x03, 0x04, 0x05, 0x0F, 0x20, 0x21, 0xAD, 0xAF, 0xA4 });
-
 
             if (Bits == 128)
             {
@@ -69,7 +55,7 @@ namespace Ma_Hoa_AES
             }
         }
 
-        // Decrypt a byte array into a byte array using a key and an IV 
+        /*--------------------GIẢI MÃ-----------------------------------*/
         private byte[] Decrypt(byte[] cipherData, byte[] Key, byte[] IV)
         {
 
@@ -84,17 +70,9 @@ namespace Ma_Hoa_AES
             return decryptedData;
         }
 
-
-        /// <summary>
-        /// Returns a decrypted string.
-        /// </summary>
-        // Decrypt a string into a string using a password 
         public string Decrypt(string Data,string Password , int Bits)
         {
-            //string Password = aeskey192;
-
             byte[] cipherBytes = Convert.FromBase64String(Data);
-
             PasswordDeriveBytes pdb = new PasswordDeriveBytes(Password,
 
                 new byte[] { 0x00, 0x01, 0x02, 0x1C, 0x1D, 0x1E, 0x03, 0x04, 0x05, 0x0F, 0x20, 0x21, 0xAD, 0xAF, 0xA4 });

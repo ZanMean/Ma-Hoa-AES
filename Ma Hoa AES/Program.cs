@@ -6,9 +6,6 @@ namespace Ma_Hoa_AES
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
