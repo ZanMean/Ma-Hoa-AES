@@ -54,6 +54,36 @@
   <ItemGroup>
     <Compile Include="Belasco.cs" />
     <Compile Include="CEASAR.cs" />
+    <Compile Include="MaHoa_Belasco\MaHoa_Belasco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaHoa_Belasco\MaHoa_Belasco.Designer.cs">
+      <DependentUpon>MaHoa_Belasco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaHoa_Ceasar\MaHoa_Ceasar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaHoa_Ceasar\MaHoa_Ceasar.Designer.cs">
+      <DependentUpon>MaHoa_Ceasar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaHoa_Trimethius\MaHoa_Trimethius.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaHoa_Trimethius\MaHoa_Trimethius.Designer.cs">
+      <DependentUpon>MaHoa_Trimethius.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaHoa_Vignere\MaHoa_Vignere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaHoa_Vignere\MaHoa_Vignere.Designer.cs">
+      <DependentUpon>MaHoa_Vignere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaHoa_Xor\MaHoa_Xor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaHoa_Xor\MaHoa_Xor.Designer.cs">
+      <DependentUpon>MaHoa_Xor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ma_HOa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +93,21 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sec_AES.cs" />
+    <EmbeddedResource Include="MaHoa_Belasco\MaHoa_Belasco.resx">
+      <DependentUpon>MaHoa_Belasco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaHoa_Ceasar\MaHoa_Ceasar.resx">
+      <DependentUpon>MaHoa_Ceasar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaHoa_Trimethius\MaHoa_Trimethius.resx">
+      <DependentUpon>MaHoa_Trimethius.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaHoa_Vignere\MaHoa_Vignere.resx">
+      <DependentUpon>MaHoa_Vignere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaHoa_Xor\MaHoa_Xor.resx">
+      <DependentUpon>MaHoa_Xor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ma_HOa.resx">
       <DependentUpon>Ma_HOa.cs</DependentUpon>
     </EmbeddedResource>
