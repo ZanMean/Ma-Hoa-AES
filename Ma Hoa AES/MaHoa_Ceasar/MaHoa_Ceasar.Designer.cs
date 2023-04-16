@@ -157,6 +157,7 @@
             this.cmdmahoa.TabIndex = 6;
             this.cmdmahoa.Text = "MÃ HÓA";
             this.cmdmahoa.UseVisualStyleBackColor = false;
+            this.cmdmahoa.Click += new System.EventHandler(this.cmdmahoa_Click);
             // 
             // label3
             // 
@@ -187,6 +188,7 @@
             this.cmddecr.TabIndex = 14;
             this.cmddecr.Text = "GIẢI MÃ";
             this.cmddecr.UseVisualStyleBackColor = false;
+            this.cmddecr.Click += new System.EventHandler(this.cmddecr_Click);
             // 
             // label7
             // 

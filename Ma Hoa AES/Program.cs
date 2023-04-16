@@ -11,7 +11,7 @@ namespace Ma_Hoa_AES
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MaHoa_Xor.MaHoa_Xor());
+            Application.Run(new MaHoa_Ceasar.MaHoa_Ceasar());
         }
     }
 }
